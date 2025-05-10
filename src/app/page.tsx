@@ -67,8 +67,8 @@ export default function Home() {
             <h2 className="text-3xl font-abril mb-6 font-normal">About Me</h2>
             <div className="space-y-4 text-white font-open-sans text-base">
               <p className="text-base font-[Open_Sans] text-white">
-              Welcome! My name is Rav, I'm a digital artist focused on creating OCs, character design, and fanart,
-              always exploring the more imaginative and aesthetic side of art. I've been working in the field for 2
+              Welcome! My name is Rav, I&apos;m a digital artist focused on creating OCs, character design, and fanart,
+              always exploring the more imaginative and aesthetic side of art. I&apos;ve been working in the field for 2
               years, with 7 years of experience in art overall.
               </p>
               <p className="text-base font-[Open_Sans] text-white">
