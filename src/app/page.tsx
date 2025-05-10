@@ -1,8 +1,13 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { Instagram } from "lucide-react"
+import { useState } from "react"
 
 export default function Home() {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null)
+
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Header */}
@@ -147,49 +152,49 @@ export default function Home() {
         <div className="mb-6">
           <h3 className="text-xl font-[Averia_Serif_Libre] mb-4">Recent Commissions</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
-            {/* First Image */}
-            <div className="bg-gray-900 overflow-hidden">
-              <Image
-                src="/BenevientoBr.png"
-                alt="Commission example 1"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            {/* Second Image */}
-            <div className="bg-gray-900 overflow-hidden">
-              <Image
-                src="/couple_forest.png"
-                alt="Commission example 2"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            {/* Third Image */}
-            <div className="bg-gray-900 overflow-hidden">
-              <Image
-                src="/mysterious_boy.png"
-                alt="Commission example 3"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
-            </div>
-            {/* Fourth Image */}
-            <div className="bg-gray-900 overflow-hidden">
-              <Image
-                src="/cute_couple.png"
-                alt="Commission example 4"
-                width={500}
-                height={500}
-                className="w-full h-auto object-cover"
-              />
-            </div>
+            {/* Images */}
+            {["BenevientoBr", "couple_forest", "mysterious_boy", "cute_couple"].map((imageName) => (
+              <div
+                key={imageName}
+                className="bg-gray-900 overflow-hidden cursor-pointer"
+                onClick={() => setSelectedImage(`/${imageName}.png`)}
+              >
+                <Image
+                  src={`/${imageName}.png`}
+                  alt={`Commission example ${imageName}`}
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </section>
+
+      {/* Modal for Image Preview */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative">
+            <Image
+              src={selectedImage}
+              alt="Selected Commission"
+              width={800}
+              height={800}
+              className="max-w-full max-h-screen object-contain"
+            />
+            <button
+              className="absolute top-2 right-2 text-white bg-gray-800 rounded-full p-2 hover:bg-gray-600"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </main>
   )
 }
