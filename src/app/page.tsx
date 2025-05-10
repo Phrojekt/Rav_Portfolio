@@ -34,7 +34,7 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
           <Link
-            href="/art-commissions"
+            href="#Arts"
             className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-100 transition-colors"
           >
             Art & Commissions
@@ -147,7 +147,7 @@ export default function Home() {
       <div className="w-full h-px bg-white my-16 max-w-6xl mx-auto"></div>
 
       {/* Arts & Commissions Section */}
-      <section className="py-12 px-4 md:px-8 max-w-6xl mx-auto">
+      <section id="Arts" className="py-12 px-4 md:px-8 max-w-6xl mx-auto">
         <h2 className="text-3xl font-abril mb-8">Arts & Commissions</h2>
         <div className="mb-6">
           <h3 className="text-xl font-[Averia_Serif_Libre] mb-4">Recent Commissions</h3>
