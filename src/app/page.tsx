@@ -21,7 +21,7 @@ export default function Home() {
             target="_blank"
             className="mt-4 sm:mt-0 text-white hover:text-gray-300 transition-colors"
           >
-            <Instagram size={32} />
+            <Instagram size={20} />
           </Link>
         </div>
 
