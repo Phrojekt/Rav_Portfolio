@@ -156,7 +156,7 @@ export default function Home() {
             {["BenevientoBr", "couple_forest", "mysterious_boy", "cute_couple"].map((imageName) => (
               <div
                 key={imageName}
-                className="bg-gray-900 overflow-hidden cursor-pointer"
+                className="bg-gray-900 overflow-hidden cursor-pointer group"
                 onClick={() => setSelectedImage(`/${imageName}.png`)}
               >
                 <Image
@@ -164,7 +164,7 @@ export default function Home() {
                   alt={`Commission example ${imageName}`}
                   width={500}
                   height={500}
-                  className="w-full h-auto object-cover"
+                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2"
                 />
               </div>
             ))}
