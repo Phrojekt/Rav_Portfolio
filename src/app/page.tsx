@@ -32,22 +32,23 @@ export default function Home() {
 
         <div className="w-full h-px bg-white"></div>
 
+        {/* Botões de navegação */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
           <Link
-            href="#Arts"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-100 transition-colors"
+            href="/art-commissions"
+            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
           >
             Art & Commissions
           </Link>
           <Link
             href="/how-it-works"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-100 transition-colors"
+            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
           >
             How it Works
           </Link>
           <Link
             href="/prices-faq"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-100 transition-colors"
+            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
           >
             Prices & FAQ
           </Link>
@@ -78,9 +79,10 @@ export default function Home() {
               </p>
             </div>
 
+            {/* Botão "Place your Order" */}
             <Link
               href="https://discord.com"
-              className="inline-flex items-center gap-2 mt-8 bg-white text-black hover:bg-opacity-90 px-6 py-3 rounded transition-colors font-[Averia_Serif_Libre] text-xl"
+              className="inline-flex items-center gap-2 mt-8 bg-white text-black hover:bg-gray-200 hover:text-black px-6 py-3 rounded transition-colors font-[Averia_Serif_Libre] text-xl"
             >
               <Image
                 src="/Discord.png"
