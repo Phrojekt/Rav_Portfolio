@@ -36,7 +36,7 @@ export default function HowItWorks() {
               <h2 className="text-2xl font-serif mb-4">1. Contact & Discuss</h2>
               <p className="text-gray-300 font-[Open_Sans]">
                 You can reach me on Discord or Instagram. When contacting me, please include visual references such as characters, poses, outfits, aesthetics, expressions, and any other important details.
-                If you're requesting a character design, make sure to provide all the necessary visual references to help me fully understand your idea.
+                If you&apos;re requesting a character design, make sure to provide all the necessary visual references to help me fully understand your idea.
               </p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function HowItWorks() {
               <p className="text-gray-300 font-[Open_Sans]">
                 Payment must be made 100% upfront — the artwork will not begin until I receive both the payment and the proof of payment.
                 I accept payments via Pix, PayPal. Other methods can be discussed if needed.
-                Commissions are opened in batches of 5 slots. Once payment is confirmed, you'll receive a link to track your position in the queue.
+                Commissions are opened in batches of 5 slots. Once payment is confirmed, you&apos;ll receive a link to track your position in the queue.
               </p>
             </div>
           </div>
