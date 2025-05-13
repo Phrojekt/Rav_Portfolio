@@ -47,10 +47,10 @@ export default function Home() {
             How it Works
           </Link>
           <Link
-            href="/prices-faq"
+            href="/prices"
             className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
           >
-            Prices & FAQ
+            Prices
           </Link>
         </div>
 
