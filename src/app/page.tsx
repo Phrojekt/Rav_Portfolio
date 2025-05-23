@@ -81,8 +81,8 @@ export default function Home() {
 
             {/* Botão "Place your Order" */}
             <Link
-              href="https://discord.com"
-              className="inline-flex items-center gap-2 mt-8 bg-white text-black hover:bg-gray-200 hover:text-black px-6 py-3 rounded transition-colors font-[Averia_Serif_Libre] text-xl"
+              href="https://discord.gg/nMPb5QMnp2"
+              className="inline-flex items-center gap-2 mt-8 bg-white text-black hover:bg-gray-200 hover:text-black px-6 py-3 rounded transition-colors font-[Averia_Serif_Libre] text-xl" target="_blank"
             >
               <Image
                 src="/Discord.png"
