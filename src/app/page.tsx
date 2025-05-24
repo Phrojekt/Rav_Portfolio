@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen bg-black text-white relative overflow-hidden">
-      <div className="fixed inset-0 pointer-events-none z-[1]">
+      <div className="fixed inset-0 pointer-events-none z-0">
         <StarryRain />
       </div>
       {/* Conteúdo da página */}
@@ -153,7 +153,7 @@ export default function Home() {
       <div className="w-full h-px bg-white my-16 max-w-6xl mx-auto"></div>
 
       {/* Arts & Commissions Section */}
-      <section id="Arts" className="py-12 px-4 md:px-8 max-w-6xl mx-auto">
+      <section id="Arts" className="py-12 px-4 md:px-8 max-w-6xl mx-auto z-10">
         <h2 className="text-3xl font-abril mb-8">Arts & Commissions</h2>
         <div className="mb-6">
           <h3 className="text-xl font-[Averia_Serif_Libre] mb-4">Recent Commissions</h3>
@@ -162,7 +162,7 @@ export default function Home() {
             {["BenevientoBr", "couple_forest", "mysterious_boy", "cute_couple"].map((imageName) => (
               <div
                 key={imageName}
-                className="bg-gray-900 overflow-hidden cursor-pointer group"
+                className="bg-gray-900 z-10 overflow-hidden cursor-pointer group"
                 onClick={() => setSelectedImage(`/${imageName}.png`)}
               >
                 <Image
@@ -170,7 +170,7 @@ export default function Home() {
                   alt={`Commission example ${imageName}`}
                   width={500}
                   height={500}
-                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2"
+                  className="w-full h-auto z-10 object-cover transition-transform duration-300 group-hover:scale-105 group-hover:-translate-y-2"
                 />
               </div>
             ))}
