@@ -4,59 +4,63 @@ import Image from "next/image"
 import Link from "next/link"
 import { Instagram } from "lucide-react"
 import { useState } from "react"
+import StarryRain from "@/components/starryrain"
 
 export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      {/* Header */}
-      <section className="pt-24 pb-8 flex flex-col items-center justify-center px-4">
-      <div className="w-full max-w-4xl mx-auto">
-        <div className="flex flex-col sm:flex-row items-center md:pl-40 sm:items-baseline justify-between mb-6">
-          {/* Title */}
-          <h1 className="font-abril text-white text-4xl sm:text-6xl md:text-7xl tracking-wider text-center sm:text-left">
-            MEPHOCODEX
-          </h1>
-
-          {/* Instagram Icon */}
-          <Link
-            href="https://www.instagram.com/mephodovebat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-            aria-label="Instagram"
-            target="_blank"
-            className="mt-4 sm:mt-0 text-white hover:text-gray-300 transition-colors"
-          >
-            <Instagram size={20} />
-          </Link>
-        </div>
-
-        <div className="w-full h-px bg-white"></div>
-
-        {/* Botões de navegação */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
-          <Link
-            href="/art-commissions"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
-          >
-            Art & Commissions
-          </Link>
-          <Link
-            href="/how-it-works"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
-          >
-            How it Works
-          </Link>
-          <Link
-            href="/prices"
-            className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
-          >
-            Prices
-          </Link>
-        </div>
-
-        <div className="w-full h-px bg-white mb-6"></div>
+    <main className="min-h-screen bg-black text-white relative overflow-hidden">
+      <div className="fixed inset-0 pointer-events-none z-[1]">
+        <StarryRain />
       </div>
-    </section>
+      {/* Conteúdo da página */}
+      <section className="relative z-10 pt-24 pb-8 flex flex-col items-center justify-center px-4">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="flex flex-col sm:flex-row items-center md:pl-40 sm:items-baseline justify-between mb-6">
+            {/* Title */}
+            <h1 className="font-abril text-white text-4xl sm:text-6xl md:text-7xl tracking-wider text-center sm:text-left">
+              MEPHOCODEX
+            </h1>
+
+            {/* Instagram Icon */}
+            <Link
+              href="https://www.instagram.com/mephodovebat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              aria-label="Instagram"
+              target="_blank"
+              className="mt-4 sm:mt-0 text-white hover:text-gray-300 transition-colors"
+            >
+              <Instagram size={20} />
+            </Link>
+          </div>
+
+          <div className="w-full h-px bg-white"></div>
+
+          {/* Botões de navegação */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
+            <Link
+              href="/art-commissions"
+              className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
+            >
+              Art & Commissions
+            </Link>
+            <Link
+              href="/how-it-works"
+              className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
+            >
+              How it Works
+            </Link>
+            <Link
+              href="/prices"
+              className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
+            >
+              Prices
+            </Link>
+          </div>
+
+          <div className="w-full h-px bg-white mb-6"></div>
+        </div>
+      </section>
 
       {/* Divider */}
       <div className="w-full h-px bg-white my-8 max-w-6xl mx-auto"></div>

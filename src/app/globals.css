@@ -29,4 +29,21 @@ body {
   line-height: 1.6; /* Melhor legibilidade */
 }
 
+@keyframes fall {
+  0% {
+    top: -5%;
+    opacity: 0.8;
+  }
+  100% {
+    top: 105%;
+    opacity: 0.2;
+  }
+}
+
+.animate-fall {
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
 
