@@ -47,7 +47,7 @@ export default function StarryRain() {
         animationDuration: Math.random() * 6 + 4,
         size: Math.random() * 4 + 3,
         opacity: Math.random() * 0.5 + 0.5,
-        delay: Math.random() * 10,
+        delay: Math.random() * 2, // Diminui o delay máximo de 10 para 2 segundos
         trailLength: Math.random() * 80 + 40,
         sway: Math.random() * 30 + 10,
       })
@@ -195,6 +195,9 @@ export default function StarryRain() {
         @keyframes fall-natural {
           0% {
             transform: translateY(-100vh) translateX(0) rotate(0deg);
+            opacity: 0;
+          }
+          5% {
             opacity: 0;
           }
           10% {
