@@ -39,7 +39,7 @@ export default function Home() {
           {/* Botões de navegação */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 py-4">
             <Link
-              href="/art-commissions"
+              href="#Arts"
               className="bg-white text-black font-[Averia_Serif_Libre] text-center py-2 px-4 hover:bg-gray-200 hover:text-black transition-colors"
             >
               Art & Commissions
