@@ -94,26 +94,26 @@ export default function Home() {
       {/* ===== SEÇÃO HEADER/CABEÇALHO ===== */}
       <header className="pt-16 pb-8 flex flex-col items-center max-w-6xl mx-auto px-4 relative z-20">
         <div className="text-center mb-8 relative w-full">
-          {/* ===== ÍCONES DE REDES SOCIAIS ===== */}
-          <div className="absolute right-0 top-0 flex items-center gap-4">
+          {/* ===== ÍCONES DE REDES SOCIAIS - POSICIONAMENTO RESPONSIVO ===== */}
+          <div className="absolute right-0 top-0 sm:right-4 md:right-8 lg:right-0 flex items-center gap-4 z-30">
             <Link
               href="https://www.instagram.com/mephodovebat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               aria-label="Instagram"
               target="_blank"
-              className="text-rose-600 hover:text-pink-600 transition-all duration-300 transform hover:scale-110 drop-shadow-lg"
+              className="text-rose-600 hover:text-pink-600 transition-all duration-300 transform hover:scale-110 drop-shadow-lg bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg border-2 border-pink-200/50"
             >
-              <Instagram className="h-7 w-7" />
+              <Instagram className="h-6 w-6 sm:h-7 sm:w-7" />
             </Link>
           </div>
 
           {/* ===== LOGO PRINCIPAL ===== */}
-          <div className="flex justify-center mb-6">
+          <div className="flex justify-center mb-6 px-12 sm:px-16 md:px-20 lg:px-0">
             <Image
               src="/Ravly_logo.png"
               alt="Ravly Logo"
               width={400}
               height={150}
-              className="drop-shadow-lg hover:drop-shadow-xl transition-all duration-500 transform hover:scale-105"
+              className="drop-shadow-lg hover:drop-shadow-xl transition-all duration-500 transform hover:scale-105 max-w-full h-auto"
               priority
             />
           </div>
