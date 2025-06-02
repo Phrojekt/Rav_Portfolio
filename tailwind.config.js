@@ -13,10 +13,13 @@ module.exports = {
         comfortaa: ['var(--font-comfortaa)'],
       },
       colors: {
-        'pastel-pink': '#f8d7da',
-        'rose-pink': '#f5c2c7',
-        'burgundy': '#721c24',
-        'dark-burgundy': '#541518',
+        'bordo-escuro': '#6D1A1A',
+        'vermelho-rosado': '#C04848',
+        'rosa-chiclete-suave': '#49D4DD',
+        'bege-cremoso': '#FFF3E7',
+        'marfim-palido': '#FFF9F4',
+        'champanhe-rose': '#EAD3C1',
+        'preto-avermelhado': '#3B1A1A',
       },
       borderRadius: {
         '4xl': '2rem',

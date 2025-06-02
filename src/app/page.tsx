@@ -9,24 +9,24 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
-    <main className="min-h-screen bg-gradient-to-br bg-[#E3C6A4] text-black relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-white to-amber-50 text-black relative overflow-hidden">
       {/* ===== CORAÇÕES DECORATIVOS ANIMADOS - RESPONSIVOS ===== */}
       {/* Corações nas laterais - apenas em telas maiores */}
       <div className="hidden lg:block">
         {/* Lado esquerdo */}
-        <div className="absolute top-20 left-4 xl:left-8 text-rose-400 opacity-40 z-0">
+        <div className="absolute top-20 left-4 xl:left-8 text-red-400 opacity-40 z-0">
           <Heart className="h-4 w-4 xl:h-5 xl:w-5 animate-bounce" style={{ animationDelay: "0s", animationDuration: "3s" }} />
         </div>
         <div className="absolute top-40 left-8 xl:left-12 text-pink-400 opacity-30 z-0">
           <Heart className="h-3 w-3 xl:h-4 xl:w-4 animate-pulse" style={{ animationDelay: "1s", animationDuration: "4s" }} />
         </div>
-        <div className="absolute top-64 left-4 xl:left-8 text-rose-500 opacity-35 z-0">
+        <div className="absolute top-64 left-4 xl:left-8 text-red-500 opacity-35 z-0">
           <Heart className="h-5 w-5 xl:h-6 xl:w-6 animate-ping" style={{ animationDelay: "2s", animationDuration: "5s" }} />
         </div>
         <div className="absolute top-96 left-6 xl:left-10 text-pink-500 opacity-30 z-0">
           <Heart className="h-3 w-3 xl:h-4 xl:w-4 animate-bounce" style={{ animationDelay: "3s", animationDuration: "3.5s" }} />
         </div>
-        <div className="absolute top-[30rem] left-4 xl:left-8 text-rose-400 opacity-40 z-0">
+        <div className="absolute top-[30rem] left-4 xl:left-8 text-red-400 opacity-40 z-0">
           <Heart className="h-4 w-4 xl:h-5 xl:w-5 animate-pulse" style={{ animationDelay: "4s", animationDuration: "4.5s" }} />
         </div>
 
@@ -34,13 +34,13 @@ export default function Home() {
         <div className="absolute top-32 right-4 xl:right-8 text-pink-400 opacity-35 z-0">
           <Heart className="h-4 w-4 xl:h-5 xl:w-5 animate-pulse" style={{ animationDelay: "0.5s", animationDuration: "3.8s" }} />
         </div>
-        <div className="absolute top-56 right-8 xl:right-12 text-rose-500 opacity-30 z-0">
+        <div className="absolute top-56 right-8 xl:right-12 text-red-500 opacity-30 z-0">
           <Heart className="h-3 w-3 xl:h-4 xl:w-4 animate-bounce" style={{ animationDelay: "1.5s", animationDuration: "4.2s" }} />
         </div>
         <div className="absolute top-80 right-4 xl:right-8 text-pink-500 opacity-40 z-0">
           <Heart className="h-5 w-5 xl:h-6 xl:w-6 animate-ping" style={{ animationDelay: "2.5s", animationDuration: "5.2s" }} />
         </div>
-        <div className="absolute top-[26rem] right-6 xl:right-10 text-rose-400 opacity-30 z-0">
+        <div className="absolute top-[26rem] right-6 xl:right-10 text-red-400 opacity-30 z-0">
           <Heart className="h-3 w-3 xl:h-4 xl:w-4 animate-pulse" style={{ animationDelay: "3.5s", animationDuration: "3.2s" }} />
         </div>
         <div className="absolute top-[34rem] right-4 xl:right-8 text-pink-400 opacity-35 z-0">
@@ -49,25 +49,25 @@ export default function Home() {
       </div>
 
       {/* Corações flutuantes no topo - visíveis em todas as telas mas posicionados para não atrapalhar */}
-      <div className="absolute top-4 left-1/4 md:left-1/3 text-rose-300 opacity-25 z-0">
+      <div className="absolute top-4 left-1/4 md:left-1/3 text-red-300 opacity-25 z-0">
         <Heart className="h-3 w-3 md:h-4 md:w-4 animate-bounce" style={{ animationDelay: "1s", animationDuration: "6s" }} />
       </div>
       <div className="absolute top-8 right-1/4 md:right-1/3 text-pink-300 opacity-20 z-0">
         <Heart className="h-2 w-2 md:h-3 md:w-3 animate-pulse" style={{ animationDelay: "2s", animationDuration: "7s" }} />
       </div>
-      <div className="absolute top-12 left-1/2 text-rose-300 opacity-30 z-0">
+      <div className="absolute top-12 left-1/2 text-red-300 opacity-30 z-0">
         <Heart className="h-3 w-3 md:h-4 md:w-4 animate-ping" style={{ animationDelay: "3s", animationDuration: "8s" }} />
       </div>
 
       {/* Corações flutuantes na parte inferior - apenas em telas médias e grandes */}
       <div className="hidden md:block">
-        <div className="absolute bottom-20 left-1/5 text-rose-300 opacity-25 z-0">
+        <div className="absolute bottom-20 left-1/5 text-red-300 opacity-25 z-0">
           <Heart className="h-3 w-3 lg:h-4 lg:w-4 animate-bounce" style={{ animationDelay: "5s", animationDuration: "4.5s" }} />
         </div>
         <div className="absolute bottom-32 right-1/5 text-pink-300 opacity-30 z-0">
           <Heart className="h-4 w-4 lg:h-5 lg:w-5 animate-pulse" style={{ animationDelay: "6s", animationDuration: "5.5s" }} />
         </div>
-        <div className="absolute bottom-16 left-1/3 text-rose-400 opacity-20 z-0">
+        <div className="absolute bottom-16 left-1/3 text-red-400 opacity-20 z-0">
           <Heart className="h-2 w-2 lg:h-3 lg:w-3 animate-ping" style={{ animationDelay: "7s", animationDuration: "6.5s" }} />
         </div>
         <div className="absolute bottom-28 right-1/3 text-pink-400 opacity-25 z-0">
@@ -77,13 +77,13 @@ export default function Home() {
 
       {/* Corações nos cantos - apenas em telas extra grandes */}
       <div className="hidden xl:block">
-        <div className="absolute top-1/3 left-2 text-rose-200 opacity-20 z-0">
+        <div className="absolute top-1/3 left-2 text-red-200 opacity-20 z-0">
           <Heart className="h-3 w-3 animate-pulse" style={{ animationDelay: "9s", animationDuration: "7s" }} />
         </div>
         <div className="absolute top-2/3 right-2 text-pink-200 opacity-25 z-0">
           <Heart className="h-4 w-4 animate-bounce" style={{ animationDelay: "10s", animationDuration: "5s" }} />
         </div>
-        <div className="absolute bottom-1/3 left-2 text-rose-300 opacity-15 z-0">
+        <div className="absolute bottom-1/3 left-2 text-red-300 opacity-15 z-0">
           <Heart className="h-2 w-2 animate-ping" style={{ animationDelay: "11s", animationDuration: "8s" }} />
         </div>
         <div className="absolute top-1/4 right-2 text-pink-300 opacity-20 z-0">
@@ -100,7 +100,7 @@ export default function Home() {
               href="https://www.instagram.com/mephodovebat?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               aria-label="Instagram"
               target="_blank"
-              className="text-rose-600 hover:text-pink-600 transition-all duration-300 transform hover:scale-110 drop-shadow-lg bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg border-2 border-pink-200/50"
+              className="text-red-600 hover:text-pink-600 transition-all duration-300 transform hover:scale-110 drop-shadow-lg bg-white/80 backdrop-blur-sm rounded-full p-2 shadow-lg border-2 border-pink-200/50"
             >
               <Instagram className="h-6 w-6 sm:h-7 sm:w-7" />
             </Link>
@@ -128,19 +128,19 @@ export default function Home() {
           <nav className="flex flex-col sm:flex-row gap-6 justify-center mb-8">
             <Link
               href="#Arts"
-              className="group relative bg-gradient-to-r from-pink-200 to-rose-200 text-rose-800 hover:from-rose-800 hover:to-rose-900 hover:text-white transition-all duration-300 py-4 px-8 text-center rounded-3xl font-nunito font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="group relative bg-gradient-to-r from-pink-200 to-red-200 text-red-800 hover:from-red-800 hover:to-red-900 hover:text-white transition-all duration-300 py-4 px-8 text-center rounded-3xl font-nunito font-bold shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span className="relative z-10">Art & Commissions</span>
             </Link>
             <Link
               href="/how-it-works"
-              className="group relative bg-gradient-to-r from-pink-200 to-rose-200 text-rose-800 hover:from-rose-800 hover:to-rose-900 hover:text-white transition-all duration-300 py-4 px-8 text-center font-bold rounded-3xl font-nunito shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="group relative bg-gradient-to-r from-pink-200 to-red-200 text-red-800 hover:from-red-800 hover:to-red-900 hover:text-white transition-all duration-300 py-4 px-8 text-center font-bold rounded-3xl font-nunito shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span className="relative z-10">How it Works</span>
             </Link>
             <Link
               href="/prices"
-              className="group relative bg-gradient-to-r from-pink-200 to-rose-200 text-rose-800 hover:from-rose-800 hover:to-rose-900 hover:text-white transition-all duration-300 py-4 px-8 text-center font-bold rounded-3xl font-nunito shadow-lg hover:shadow-xl transform hover:scale-105"
+              className="group relative bg-gradient-to-r from-pink-200 to-red-200 text-red-800 hover:from-red-800 hover:to-red-900 hover:text-white transition-all duration-300 py-4 px-8 text-center font-bold rounded-3xl font-nunito shadow-lg hover:shadow-xl transform hover:scale-105"
             >
               <span className="relative z-10">Prices</span>
             </Link>
@@ -156,7 +156,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           {/* ===== CONTEÚDO TEXTUAL ===== */}
           <div className="md:w-2/3">
-            <h2 className="text-5xl font-comfortaa text-rose-800 font-bold mb-8 drop-shadow-lg">About Me</h2>
+            <h2 className="text-5xl font-comfortaa text-red-800 font-bold mb-8 drop-shadow-lg">About Me</h2>
 
             {/* ===== PARÁGRAFOS INFORMATIVOS ===== */}
             <div className="space-y-6 text-gray-700">
@@ -180,7 +180,7 @@ export default function Home() {
             <Link
               href="https://discord.gg/nMPb5QMnp2"
               target="_blank"
-              className="group inline-flex items-center gap-3 mt-10 bg-gradient-to-r from-pink-200 to-rose-200 text-rose-800 hover:from-rose-800 hover:to-rose-900 hover:text-white transition-all duration-300 px-8 py-4 rounded-full font-nunito font-bold shadow-lg transform hover:scale-105"
+              className="group inline-flex items-center gap-3 mt-10 bg-gradient-to-r from-pink-200 to-red-200 text-red-800 hover:from-red-800 hover:to-red-900 hover:text-white transition-all duration-300 px-8 py-4 rounded-full font-nunito font-bold shadow-lg transform hover:scale-105"
             >
               <Image
                 src="/Discord.png"
@@ -221,7 +221,7 @@ export default function Home() {
                       {[...Array(5)].map((_, j) => (
                         <div
                           key={j}
-                          className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-rose-300/70"
+                          className="w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-red-300/70"
                         ></div>
                       ))}
                     </div>
@@ -245,11 +245,11 @@ export default function Home() {
       </section>
 
       {/* ===== LINHA DIVISÓRIA SECUNDÁRIA ===== */}
-      <div className="w-full h-px bg-gradient-to-r from-transparent via-rose-300 to-transparent my-16 max-w-6xl mx-auto"></div>
+      <div className="w-full h-px bg-gradient-to-r from-transparent via-red-300 to-transparent my-16 max-w-6xl mx-auto"></div>
 
       {/* ===== SEÇÃO ARTS & COMMISSIONS ===== */}
       <section id="Arts" className="py-12 px-4 md:px-8 max-w-6xl mx-auto relative z-20">
-        <h2 className="text-5xl font-comfortaa font-bold mb-8 text-rose-800 drop-shadow-lg text-center">
+        <h2 className="text-5xl font-comfortaa font-bold mb-8 text-red-800 drop-shadow-lg text-center">
           Arts & Commissions
         </h2>
 
@@ -292,7 +292,7 @@ export default function Home() {
               className="max-w-full max-h-screen object-contain"
             />
             <button
-              className="absolute top-2 right-2 text-white bg-rose-600 rounded-full p-2 hover:bg-pink-600 transition-colors"
+              className="absolute top-2 right-2 text-white bg-red-600 rounded-full p-2 hover:bg-pink-600 transition-colors"
               onClick={() => setSelectedImage(null)}
             >
               ✕
