@@ -9,7 +9,7 @@ export default function Home() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
 
   return (
-    <main className="min-h-screen bg-gradient-to-br from-[#ECD1C7] to-[#e6bdae] text-black relative overflow-hidden">
+    <main className="min-h-screen bg-gradient-to-br from-[#e6d89a] to-[#f5f39e] text-black relative overflow-hidden">
       {/* ===== CORAÇÕES DECORATIVOS ANIMADOS - RESPONSIVOS ===== */}
       {/* Corações nas laterais - apenas em telas maiores */}
       <div className="hidden lg:block">
